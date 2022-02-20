@@ -3,7 +3,6 @@
   --white: hsl(0, 0%, 100%);
   --light-grey: hsl(0, 0%, 87%);
   --fs-titles: clamp(2rem, 1vw + 1.2rem, 3rem);
-  /* --fs-titles: clamp(2rem, 3vw + 0.3rem, 3rem); */
   --fs-text: clamp(0.938rem, 1.8vw, 1.563rem);
   --fs-s: clamp(0.75rem, 1.8vw, 1.125rem);
   --fs-ct: clamp(1rem, 1.4vw, 1.25rem);
@@ -687,13 +686,18 @@ body {
     text-decoration: underline;
   }
 
-  .galery__figure:hover {
+  /* .galery__figure:hover {
+    cursor: pointer;
+    transform: translateY(-50px);
+    z-index: 2;
+  } */
+  .cardimage__cont:hover {
     cursor: pointer;
     transform: translateY(-50px);
     z-index: 2;
   }
 
-  .galery__figure:hover .bar__galery {
+  .cardimage__cont:hover .bar__galery {
     position: absolute;
     display: block;
   }
