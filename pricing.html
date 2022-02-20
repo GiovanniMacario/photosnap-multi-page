@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img src="assets/icon/logo.svg" alt="logo company" class="img" />
+      </div>
+      <nav class="nav" id="menu">
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="stories.html" class="menu__link">STORIES</a>
+          </li>
+          <li class="menu__item">
+            <a href="features.html" class="menu__link">FEATURES</a>
+          </li>
+          <li class="menu__item">
+            <a href="pricing.html" class="menu__link">PRICING</a>
+          </li>
+          <li class="menu__item">
+            <div class="menu__bar"></div>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="button1 btn__header">GET AN INVITE</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#" class="button1">GET AN INVITE</a>
+
+      <div class="header__toggle header__btnmenu" id="toggle">
+        <img src="assets/icon/menu.svg" alt="icon menu" id="iconmenu" />
+        <img
+          src="assets/icon/close.svg"
+          alt="icon close"
+          id="iconclose"
+          class="close"
+        />
+      </div>
+    </header>
+    <main class="main">
+      <section class="section sectionCreate">
+        <div class="section__cont">
+          <div class="bar"></div>
+          <div class="section__conttext">
+            <h1 class="section__title">PRICING</h1>
+            <p class="section__text">
+              Create a your stories, Photosnap is a platform for photographers
+              and visual storytellers. It's the simple way to create and share
+              your photos.
+            </p>
+          </div>
+        </div>
+        <picture class="section__picture">
+          <source
+            media="(min-width:1024px)"
+            srcset="assets/pricing/desklop/hero.jpg"
+          />
+          <source
+            media="(min-width:740px)"
+            srcset="assets/pricing/tablet/hero.jpg"
+          />
+
+          <img
+            src="assets/pricing/mobile/hero.jpg"
+            alt="illustration photography "
+            class="img"
+          />
+        </picture>
+      </section>
+
+      <div class="section-card">
+        <div class="toggle__cont">
+          <p class="toggle__text">Monthly</p>
+          <div class="toggle" id="togglecard">
+            <div class="toggle__point" id="point"></div>
+          </div>
+          <p class="toggle__text">Yearly</p>
+        </div>
+        <div class="cardcontainer">
+          <div class="card">
+            <div class="card__conttext">
+              <div class="card__title">Basic</div>
+              <p class="card__text">Includes basic usage of our platfom.</p>
+              <p class="card__text">Recommended for new and aspiring</p>
+              <p class="card__text">photographers.</p>
+            </div>
+            <div class="card__bottom">
+              <p class="card__cost" id="cardnum1">$19.00</p>
+              <span class="card__span">per month</span>
+            </div>
+            <a class="card__button">PICK PLAN</a>
+          </div>
+          <div class="card card__black">
+            <div class="bar__card"></div>
+            <div class="card__conttext">
+              <div class="card__title card__title--black">Pro</div>
+              <p class="card__text card__text--black">
+                More advanced features available.
+              </p>
+              <p class="card__text card__text--black">
+                Recommended for photography
+              </p>
+              <p class="card__text card__text--black">
+                Veterans and professionals
+              </p>
+            </div>
+            <div class="card__bottom">
+              <p class="card__cost" id="cardnum2">$39.00</p>
+              <span class="card__span card__span--black">per month</span>
+            </div>
+            <a class="card__button card__button--black">PICK PLAN</a>
+          </div>
+          <div class="card">
+            <div class="card__conttext">
+              <div class="card__title">Business</div>
+              <p class="card__text">Additional features available such as</p>
+              <p class="card__text">more detailed metrics. Recommended</p>
+              <p class="card__text">for business owners.</p>
+            </div>
+            <div class="card__bottom">
+              <p class="card__cost" id="cardnum3">$99.00</p>
+              <span class="card__span">per month</span>
+            </div>
+            <a class="card__button">PICK PLAN</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sectiontable">
+        <table class="table__cont">
+          <caption class="table__caption">
+            COMPARE
+          </caption>
+          <tr class="table__tr">
+            <th class="table__th table__left">THE FEATURES</th>
+            <th class="table__th table__none">BASIC</th>
+            <th class="table__th table__none">PRO</th>
+            <th class="table__th table__none">BUSINESS</th>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td table__left">UNLIMITED STORY POSTING</td>
+            <td class="table__td">
+              <p class="table__text">BASIC</p>
+              <img
+                src="assets/icon/check.svg"
+                alt="icon check"
+                class="img-table"
+              />
+            </td>
+            <td class="table__td">
+              <p class="table__text">PRO</p>
+              <img
+                src="assets/icon/check.svg"
+                alt="icon check"
+                class="img-table"
+              />
+            </td>
+            <td class="table__td">
+              <p class="table__text">BUSINESS</p>
+              <img
+                src="assets/icon/check.svg"
+                alt="icon check"
+                class="img-table"
+              />
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td table__left">UNLIMITED PHOTO UPLOAD</td>
+            <td class="table__td">
+              <p class="table__text">BASIC</p>
+              <img
+                src="assets/icon/check.svg"
+                alt="icon check"
+                class="img-table"
+              />
+            </td>
+            <td class="table__td">
+              <p class="table__text">PRO</p>
+              <img
+                src="assets/icon/check.svg"
+                alt="icon check"
+                class="img-table"
+              />
+            </td>
+            <td class="table__td">
+              <p class="table__text">BUSINESS</p>
+              <img
+                src="assets/icon/check.svg"
+                alt="icon check"
+                class="img-table"
+              />
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td table__left">EMBEDDING CUSTOM CONTENT</td>
+            <td class="table__td"><p class="table__text">BASIC</p></td>
+            <td class="table__td">
+              <p class="table__text">PRO</p>
+              <img
+                src="assets/icon/check.svg"
+                alt="icon check"
+                class="img-table"
+              />
+            </td>
+            <td class="table__td">
+              <p class="table__text">BUSINESS</p>
+              <img
+                src="assets/icon/check.svg"
+                alt="icon check"
+                class="img-table"
+              />
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td table__left">CUSTOMIZE METADATA</td>
+            <td class="table__td"><p class="table__text">BASIC</p></td>
+            <td class="table__td">
+              <p class="table__text">PRO</p>
+              <img
+                src="assets/icon/check.svg"
+                alt="icon check"
+                class="img-table"
+              />
+            </td>
+            <td class="table__td">
+              <p class="table__text">BUSINESS</p>
+              <img
+                src="assets/icon/check.svg"
+                alt="icon check"
+                class="img-table"
+              />
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td table__left">ADVANCED METRICS</td>
+            <td class="table__td"><p class="table__text">BASIC</p></td>
+            <td class="table__td"><p class="table__text">PRO</p></td>
+            <td class="table__td">
+              <p class="table__text">BUSINESS</p>
+              <img
+                src="assets/icon/check.svg"
+                alt="icon check"
+                class="img-table"
+              />
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td table__left">PHOTO DOWNLOADS</td>
+            <td class="table__td"><p class="table__text">BASIC</p></td>
+            <td class="table__td"><p class="table__text">PRO</p></td>
+            <td class="table__td">
+              <p class="table__text">BUSINESS</p>
+              <img
+                src="assets/icon/check.svg"
+                alt="icon check"
+                class="img-table"
+              />
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td table__left">SEARCH ENGINE INDEXING</td>
+            <td class="table__td"><p class="table__text">BASIC</p></td>
+            <td class="table__td"><p class="table__text">PRO</p></td>
+            <td class="table__td">
+              <p class="table__text">BUSINESS</p>
+              <img
+                src="assets/icon/check.svg"
+                alt="icon check"
+                class="img-table"
+              />
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td table__left">CUSTOM ANALYTICS</td>
+            <td class="table__td"><p class="table__text">BASIC</p></td>
+            <td class="table__td"><p class="table__text">PRO</p></td>
+            <td class="table__td">
+              <p class="table__text">BUSINESS</p>
+              <img
+                src="assets/icon/check.svg"
+                alt="icon check"
+                class="img-table"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <section class="sectionBeta">
+        <div class="betacont1">
+          <div class="bar bar__bottom"></div>
+        </div>
+        <div class="betacont2">
+          <picture>
+            <source
+              media="(min-width:1020px)"
+              srcset="assets/shared/desklop/bg-beta.jpg"
+            />
+            <source
+              media="(min-width:740px)"
+              srcset="assets/shared/tablet/bg-beta.jpg"
+            />
+            <img
+              src="assets/shared/mobile/bg-beta.jpg"
+              alt="bg beta"
+              class="img"
+            />
+          </picture>
+          <div class="beta__cont">
+            <div class="beta__conttext">
+              <h3 class="create__title">WE'RE IN BETA</h3>
+              <p class="create__subtitle">GET TODAY INVITE</p>
+              <p class="create__subtitle">TODAY!</p>
+            </div>
+            <div class="beta__button">
+              <a href="#" class="button4"
+                >GET AN INVITE
+                <img
+                  src="assets/icon/arrow-white.svg"
+                  alt="logo arro-white"
+                  class="img-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__cont">
+        <div class="footer__cont1">
+          <div class="footer__logo">
+            <img
+              src="assets/icon/logo-white.svg"
+              alt="Logo color white"
+              class="iconlogo"
+            />
+          </div>
+          <div class="footer__nav">
+            <ul class="footer__menuf">
+              <li class="menuf__item">
+                <a href="index.html" class="menuf__link">HOME</a>
+              </li>
+              <li class="menuf__item">
+                <a href="stories.html" class="menuf__link">STORIES</a>
+              </li>
+              <li class="menuf__item">
+                <a href="features.html" class="menuf__link">FEATURES</a>
+              </li>
+              <li class="menuf__item">
+                <a href="pricing.html" class="menuf__link">PRINCING</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__conticon">
+            <a href="https://www.facebook.com" target="blank">
+              <img
+                src="assets/icon/facebook.svg"
+                alt="Logo facebook"
+                class="icon"
+              />
+            </a>
+
+            <a href="https://www.youtube.com" target="blank">
+              <img
+                src="assets/icon/youtube.svg"
+                alt="Logo facebook"
+                class="icon"
+              />
+            </a>
+
+            <a href="https://twitter.com" target="blank">
+              <img
+                src="assets/icon/twitter.svg"
+                alt="Logo facebook"
+                class="icon"
+              />
+            </a>
+
+            <a href="https://www.pinterest.com" target="blank">
+              <img
+                src="assets/icon/pinterest.svg"
+                alt="Logo facebook"
+                class="icon"
+              />
+            </a>
+
+            <a href="https://www.instagram.com" target="blank">
+              <img
+                src="assets/icon/instagram.svg"
+                alt="Logo facebook"
+                class="icon"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="footer__cont2">
+          <a href="#" class="button4 footer__button"
+            >GET AN INVITE
+            <img
+              src="assets/icon/arrow-white.svg"
+              alt="logo arro-white"
+              class="img-icon"
+            />
+          </a>
+          <span class="footer__span">Copyright 2019. All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+    <script src="javascript/script.js"></script>
+    <script src="javascript/script2.js"></script>
+  </body>
+</html>
